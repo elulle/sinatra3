@@ -1,3 +1,14 @@
 <h1>List of countries</h1>
 
-<!-- put your table here -->
+
+<Table border = "2" padding = "5">
+    <tr>
+        <td><b>Country</b></td>
+        <td><b>Capital</b></td>
+    <% @countries.each do |country, city| %>
+        <tr>
+            <td><%=country %></td>
+            <td><%= city %></td>
+        </tr>
+    <% end %>
+</Table>

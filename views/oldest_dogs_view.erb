@@ -1,6 +1,10 @@
 <h1>List of oldest dogs</h1>
 
-<!-- put your list here -->
+<ul>
+    <% @dogs.each do |dogs| %>
+        <li><%= dogs %></li>
+    <% end %>
+</ul>
 
 
 

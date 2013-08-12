@@ -1,4 +1,25 @@
 <h1>List of Simpsons</h1>
 
-<!-- put your profiles here -->
+    <% @simpsons.each do |simpson| %>
+    <div class = "col-4">
+    <img src = "<%= simpson[:pic] %>" >
+     <br> <h1><%= simpson[:name] %></h1> <br>
+        <Table border = "2">
+            <tr>
+                <td>Age</td>
+                <td><%= simpson[:age] %></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><%= simpson[:gender] %></td>
+            </tr>
+            <tr>
+                <td>Catchphrase</td>
+                <td><%= simpson[:catchphrase] %></td>
+            </tr>
+        </table>
+        <a href = '/simpsons/<%=simpson[:name].downcase%>'> More...</a>
+    </div>
+    <% end %>
+
 

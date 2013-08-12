@@ -1,0 +1,19 @@
+<h1> This page is dedicated to <%= @s[:name] %></h1>
+
+<p class='text-center'>
+    <img src="<%= @s[:pic] %>" class="img-rounded">
+</p>
+<table class='table-bordered'>
+    <tr>
+        <td>Age</td>
+        <td><%= @s[:age] %></td>
+    </tr>
+    <tr>
+        <td>Sex</td>
+        <td><%= @s[:gender]%></td>
+    </tr>
+    <tr>
+        <td>Catchphrase</td>
+        <td><%= @s[:catchphrase]%></td>
+    </tr>
+</table>
